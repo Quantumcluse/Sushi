@@ -185,6 +185,7 @@ cout << endl;
 s1.add(a, b, c);
 }
 
+*/
 
 //Operator overloading 
 #include<iostream>
@@ -229,4 +230,4 @@ int main(){
 	//    o1.display();
 	return 0;
 }
-*/
+
