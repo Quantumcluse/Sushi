@@ -69,7 +69,7 @@ int main() {
     cout << "Factorial of " << num << ": " << MathUtil::factorial(num) << endl;
     return 0;
 }
-*/
+
 
 //Task 3
 #include <iostream>
@@ -146,3 +146,42 @@ int main() {
     }
     return 0;
 }
+*/
+
+
+// implimenting Function Overloading in a code
+#include<iostream>
+using namespace std;
+class sum
+{
+public:
+void add(int a, int b)
+{
+cout << a + b;
+}
+void add(int a, double b)
+{
+cout << a + b;
+}
+void add(double a, int b)
+{
+cout << a + b;
+}
+void add(int a, int b, double c)
+{
+cout << a + b + c;
+}
+};
+int main()
+{
+sum s1;
+int a = 3;
+int b = 3;
+double c = 9.3;
+s1.add(a, b);
+cout << endl;
+s1.add(c, a);
+cout << endl;
+s1.add(a, b, c);
+}
+
