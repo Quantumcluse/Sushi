@@ -690,7 +690,7 @@ cout<<a.fun(10,5)<<endl;
 cout<<b.fun(8,16)<<endl;
 return 0;
 }
-*/
+
 
 //DSA
 
@@ -816,7 +816,7 @@ int main() {
 }
 
 
-
+*/
 
 // Code with deletion and insertion functions
 #include <iostream>
