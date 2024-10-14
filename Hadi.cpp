@@ -185,49 +185,74 @@ cout << endl;
 s1.add(a, b, c);
 }
 
-*/
-
-//Operator overloading 
-#include<iostream>
+#include <iostream>
 using namespace std;
-class overload{
-	public:
-		int a;
-		int b;
-	public:
-		overload(int a1, int b1){
-			a=a1;
-			b=b1;
-			int sub=a-b;
-			cout<<"sub:"<<sub<<endl;
-		}
-	void operator-(){
-		a=-a;
-		b=-b;
-	}
-
-    	void operator+(){
-		a=-a;
-		b=-b;
-	}
-
- //	void operator::(){
-//		-a= +a;
-//		-b= +b;
-//	}
-
-	void display(){
-		cout<<"a:"<<a<<" b:"<<b<<endl;
-	}
-};
-int main(){
-	overload o1(4,3);
-	-o1;
-    	o1.display();
-    +o1;
-    	o1.display();
-   // ::o1;
-	//    o1.display();
-	return 0;
+void print(int x) {
+    cout << "Printing integer: " << x << endl;
 }
+void print(double x) {
+    cout << "Printing double: " << x << endl;
+}
+int main() {
+    int inum = 10;
+    double dnum = 3.14;
+    print(inum);   
+    print(dnum);
+    return 0;
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+class Base {
+public:
+    virtual void display() {
+        cout << "Base display called" << endl;
+    }
+};
+class Derived : public Base {
+public:
+    void display() override {
+        cout << "Derived display called" << endl;
+    }
+};
+int main() {
+    Base *ptr;
+    Derived obj;
+    ptr = &obj;
+    ptr->display();
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+class Shape {
+public:
+    virtual void draw() {
+        cout << "Drawing a shape." << endl;
+    }
+};
+class Circle : public Shape {
+public:
+    void draw() override {
+        cout << "Drawing a circle." << endl;
+    }
+};
+class Square : public Shape {
+public:
+    void draw() override {
+        cout << "Drawing a square." << endl;
+    }
+};
+int main() {
+    Circle circle;
+    Square square;
+    circle.draw();
+    square.draw(); 
+    return 0;
+}
+
+*/
 
