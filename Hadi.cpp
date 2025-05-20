@@ -271,7 +271,7 @@ else
 cout<<"file opened \n";
 cout<<"entering data in file \n";
 filename<<"joe mama\n";
-filename<<"i love shifa\n";
+filename<<"ts fr pmo gng\n";
 filename.close();
 return 0;
 }
